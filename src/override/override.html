@@ -1,0 +1,49 @@
+	<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/css/animate.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+</head>
+
+<body>
+	<div id="app">
+	<template>
+	<section class="section">
+	<div class="container">
+	<div class="columns is-mobile is-multiline is-centered">
+		<div class="column" is-one-quarter v-for="coin in filterCoins" :key="coin.name">	
+			<div class="card" >
+			  <header class="card-header">
+			    <p class="card-header-title">
+			      {{coin.name}}
+			    </p>
+			  </header>
+			  <div class="card-content">
+			    <div class="content">
+			    	{{coin.symbol}} <br>
+			      ${{coin.price_usd}}
+			    </div>
+			    <!-- <div class="card-footer">
+			    	<p class="card-footer-item">1h <br>{{coin.percent_change_1h}}%</p>
+			    	<p href="#" class="card-footer-item">24h <br>{{coin.percent_change_24h}}%</p>
+			    	<p href="#" class="card-footer-item">7d  <br>{{coin.percent_change_7d}}%</p>
+			    </div> -->
+			  </div>
+			</div>
+		</div>
+		
+	</div>
+	</div>
+	</section>
+	</template>
+	</div>
+
+	<script src="/js/jquery.min.js"></script>
+	<script src="/js/vue.min.js"></script>
+	<script src="/src/bg/cryptoprice.js"></script>
+</body>
+</html>
