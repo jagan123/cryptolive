@@ -3,7 +3,7 @@
   "version": "0.1",
   "manifest_version": 2,
   "description": "Realtime crypto currency price on every new tab",
-  "homepage_url": "https://saasproductgut.com",
+  "homepage_url": "https://saasproductguy.com",
   "offline_enabled": false,
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
   "background": {
@@ -21,5 +21,3 @@
     "https://api.coinmarketcap.com/*"
   ]
 }
-
-//
