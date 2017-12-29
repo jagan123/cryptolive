@@ -13,8 +13,5 @@
 //   });
 
 chrome.browserAction.onClicked.addListener(function() {
-	var min = 10;
-	var max = 50000;
-	var x = Math.floor(Math.random() * (max - min) + min);
-    chrome.tabs.create({'url': "http://mojoreads.com/book/" + x });
+]    chrome.tabs.create({'url': "http://saasproductguy.com"});
 });
